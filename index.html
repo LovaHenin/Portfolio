@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Bruce Wayne</a>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="#pfolio">PORTFOLIO</a></li>
+                    <li><a href="#ppropos">A PROPOS</a></li>
+                    <li><a href="#pcontact">CONTACT</a></li>
+                   
+                </ul>
+            </div>
+            <img src="photos/images.png" alt="menu hamburger" class="menu-burger">
+        </nav>
+       
+    </header>
+    <main>
+        <section  class="entete">
+           
+                <img class="profil" src="photos/profile.png" alt="profil">
+                <h2 class="nom">Bruce Wayne</h2>
+                <div class="trait">
+                    <p>-</p>
+                </div>
+                <h4 class="titre">Développeur web</h4>
+            
+        </section>
+        <section id ="pfolio" class="portfolio">
+            <h2 class="titreportfolio">PORTFOLIO</h2>
+            <div class="traitnoir">
+                <p>-</p>
+            </div>
+    <div class="container-img">
+    <img src="photos/cabin.png" alt="logo" >
+    <img src="photos/cake.png" alt="logo" >
+    <img src="photos/circus.png" alt="logo" >
+    <img src="photos/game.png" alt="logo" >
+    <img src="photos/safe.png" alt="logo" >
+    <img src="photos/submarine.png" alt="logo" >
+    </div>
+        </section>
+
+        <section class="entete-titre">
+           
+            <h2 id="ppropos" class="titre-apropos">A PROPOS</h2>
+            <div id ="tr" class="trait">
+                <p>-</p>
+            </div>
+            <div class="article">
+            <article class="bloc1">
+                <h2>Formation</h2>
+                <p>
+                    Lorem ipsum dolor sit amet. Qui assumenda voluptatum n
+                    on praesentium distinctio quo nemo rerum non distinctio
+                     adipisci ut dolor impedit ea laudantium ratione id 
+                     repudiandae quos. Ea assumenda fugit
+                     33 blanditiis suscipit quo sint incidunt non quasi
+                      doloribus ex quia esse et officia omnis qui 
+                      facere incidunt.
+        
+                    At dolores ipsam cum velit fugit ut doloremque 
+                    voluptates qui explicabo galisum. Sed consequatur 
+                    assumenda sit corporis iste aut fuga explicabo est 
+                    velit placeat id quod obcaecati in accusamus sequi. 
+                    Eum voluptate voluptatum qui necessitatibus dolorem
+                     rem atque tempore id placeat eaque eos quas sint.
+                    
+                    
+                </p>
+               
+            </article>
+            <article class="bloc1">
+                <h2>Experience</h2>
+                <p>
+                    Lorem ipsum dolor sit amet. Qui assumenda voluptatum n
+                    on praesentium distinctio quo nemo rerum non distinctio
+                     adipisci ut dolor impedit ea laudantium ratione id 
+                     repudiandae quos. Ea assumenda fugit
+                     33 blanditiis suscipit quo sint incidunt non quasi
+                      doloribus ex quia esse et officia omnis qui 
+                      facere incidunt.
+        
+                    At dolores ipsam cum velit fugit ut doloremque 
+                    voluptates qui explicabo galisum. Sed consequatur 
+                    assumenda sit corporis iste aut fuga explicabo est 
+                    velit placeat id quod obcaecati in accusamus sequi. 
+                    Eum voluptate voluptatum qui necessitatibus dolorem
+                     rem atque tempore id placeat eaque eos quas sint.
+                    
+                   
+    
+            </article>
+        </div>
+  
+        </section>
+
+        <section id="pcontact" class="contact">
+            <h2> CONTACTER MOI </h2>
+            <div id="tr1" class="traitnoir">
+                <p>-</p>
+            </div>
+            <form>
+                <label for="nom">Nom</label><br>
+                <input type="text" id="nom"> <br>
+                <label for="prenom">Prenom</label><br>
+                <input type="text" id="prenom" ><br>
+                <label for="email">Mail</label><br>
+                <input type="email" id="email" ><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" rows="5" cols="25"></textarea><br>
+     
+                <button class="bouton"
+                type="button">
+                    Envoyer
+                </button>
+                 
+    
+            </form>
+        </section>
+    </main>
+       <footer>
+        <div class="foot">
+            <h2>Adresse</h2>
+            <p>Aix - Marseille</p>
+        </div>
+        <div class="foot">
+            <h2>Mes réseaux</h2>
+            <a href="https://www.facebook.com/hottoys"><img src="photos/icons8-facebook-nouveau-48.png" alt="facebook"></a>
+            <a href="https://twitter.com/BatmanOff77">  <img src="photos/icons8-twitter-entouré-48.png" alt="twitter"></a>
+           <a href="https://www.linkedin.com/pub/dir/Bruce/Wayne">  <img src="photos/icons8-linkedin-entouré-48.png" alt="linkedin"></a>
+          
+        </div>
+        
+       </footer>
+</body>
+<script>
+    const menuHamburger=document.querySelector(".menu-burger")
+    const navlinks=document.querySelector(".nav-links")
+    menuHamburger.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+
+    })
+</script>
+</html>
